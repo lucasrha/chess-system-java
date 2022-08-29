@@ -3,7 +3,8 @@ package application;
 public class Program {
 
 	public static void main(String[] args) {
+		
+		System.out.println("Work in progress...");
 
-		System.out.println("commiting to github");
 	}
 }
