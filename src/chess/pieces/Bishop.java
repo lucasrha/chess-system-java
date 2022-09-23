@@ -50,7 +50,7 @@ public class Bishop extends ChessPiece {
 			p.setValues(p.getRow() + 1, p.getColumn() + 1);
 		}
 		if (getBoard().positionExists(p) && isThereOpponentPiece(p)) {
-			mat[p.getColumn()][p.getColumn()] = true;
+			mat[p.getRow()][p.getColumn()] = true;
 		}
 
 		//sw
@@ -60,7 +60,7 @@ public class Bishop extends ChessPiece {
 			p.setValues(p.getRow() + 1, p.getColumn() - 1);
 		}
 		if (getBoard().positionExists(p) && isThereOpponentPiece(p)) {
-			mat[p.getColumn()][p.getColumn()] = true;
+			mat[p.getRow()][p.getColumn()] = true;
 		}
 		
 		return mat;
