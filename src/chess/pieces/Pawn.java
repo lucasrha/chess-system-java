@@ -41,7 +41,7 @@ public class Pawn extends ChessPiece {
 			}
 			
 			//special move en passant white
-			if (position.getRow() == 3	) {
+			if (position.getRow() == 3) {
 				Position left = new Position(position.getRow(), position.getColumn() - 1);
 				if (getBoard().positionExists(left) && isThereOpponentPiece(left) && getBoard().piece(left) == chessMatch.getEnPassantVulnerable()) {
 					mat[left.getRow() - 1][left.getColumn()] = true;
