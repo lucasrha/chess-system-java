@@ -49,7 +49,7 @@ public class Queen extends ChessPiece {
 			p.setColumn(p.getColumn() - 1);
 		}
 		if (getBoard().positionExists(p) && isThereOpponentPiece(p)) {
-			mat[p.getColumn()][p.getColumn()] = true;
+			mat[p.getRow()][p.getColumn()] = true;
 		}
 
 		// right
@@ -59,7 +59,7 @@ public class Queen extends ChessPiece {
 			p.setColumn(p.getColumn() + 1);
 		}
 		if (getBoard().positionExists(p) && isThereOpponentPiece(p)) {
-			mat[p.getColumn()][p.getColumn()] = true;
+			mat[p.getRow()][p.getColumn()] = true;
 		}
 
 		// nw
